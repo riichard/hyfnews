@@ -1,0 +1,19 @@
+<style>
+
+p {
+ display: block; 
+  
+}
+</style>
+<div class="jumbotron text-center" ng-repeat="v in vm.message | orderBy: +['news_id']">
+    <h4>
+        {{ v.news_title }}</h4>
+    <image class="img-circle" ng-src="{{v.news_img}}"></image>
+    <br />
+    <h6>
+        {{ v.news_brief }}..</h6>
+    <button class="btn btn-warning" ng-click="showme=true">view full</button>
+    <div ng-show="showme">
+        {{v.news_full}} <a ng-click="showme=false">less</a>
+    </div>
+</div>

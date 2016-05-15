@@ -1,0 +1,19 @@
+[
+
+{
+	"cat_id":1,
+	"cat_name":"Politics"
+
+	},
+	{
+	"cat_id":2,
+	"cat_name":"Sport"
+
+	},
+	
+	{
+       "cat_id":3,
+	"cat_name":"Health"
+	}
+
+]

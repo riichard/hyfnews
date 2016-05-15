@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://news-m7.knownly.net/#/home -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    
+    <title>HackYourFuture</title>
+    <script src="./HackYourFuture_files/angular.min.js"></script>
+    <script src="./HackYourFuture_files/angular-filter.min.js"></script>
+    <script src="./HackYourFuture_files/app2.js"></script>
+    <!-- load bootstrap and fontawesome via CDN -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./HackYourFuture_files/bootstrap.min.css">
+    <script src="./HackYourFuture_files/jquery.min.js"></script>
+    <script src="./HackYourFuture_files/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./HackYourFuture_files/font-awesome.css">
+ 
+    <!-- SPELLS -->
+    <!-- load angular via CDN -->
+    <script src="./HackYourFuture_files/angular.js"></script>
+    <script src="./HackYourFuture_files/angular-route.js"></script>
+    <script src="./HackYourFuture_files/angular-resource.js"></script>
+    <style>
+        big
+        {
+            font-family:Forte;
+            color:#999;
+        }
+        body
+        {
+            background-image: url("https://wallpaperscraft.com/image/minimalist_cube_bright_background_81333_2560x1080.jpg");
+            height: 100%;
+            color: White;
+            font-family:Courier;
+        }
+        a:link {
+    color:#999;
+    background-color: transparent;
+   font-weight: bold;
+}
+.jumbotron
+{
+    padding-top:10px;
+}
+        .col-md-4
+        {
+            position:center;
+            font-family:Arial;
+            font-dicoration:bold;
+            width: 40%;
+            color: #777;
+            margin-top: 1px;
+            margin-left: 30%;
+        }
+        .img-circle
+        {
+            border-radius: 5%;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body ng-app="part" class="ng-scope">
+By Marwa.M7
+    <div class="container">
+       
+        <div class="row">
+
+            <div class="col-md-4">
+            
+            </div>
+        
+            <div class="col-md-4">
+
+                <h1>
+                <i class="fa fa-television" aria-hidden="true"></i>
+                 <center><big>Welcome to <font color="orange">News</font> Page</big></center> 
+                </h1>
+                <div ng-controller="myCtrl as newCtrl" class="ng-scope">
+                    <ul class="nav nav-tabs">
+                        <!--li  ng-repeat="(CategoriesIdValues, NewsDataByCategoryID) in newCtrl.newsdata | groupBy:'category_id'"-->
+                        <li class="active"><a data-toggle="tab" href="http://news-m7.knownly.net/#home" aria-expanded="true"><i class="fa fa-home fa-2x"></i>  Home</a></li>
+                        <li class=""><a data-toggle="tab" href="http://news-m7.knownly.net/#world" class="ng-binding" aria-expanded="false"><i class="fa fa-globe fa-2x"></i>  Politics</a></li>
+                        <li class=""><a data-toggle="tab" href="http://news-m7.knownly.net/#sport" class="ng-binding" aria-expanded="false"><i class="fa fa-trophy fa-2x" aria-hidden="true"></i>  Sport</a></li>
+                        <li class=""><a data-toggle="tab" href="http://news-m7.knownly.net/#health" class="ng-binding" aria-expanded="false"><i class="fa fa-plus fa-2x"></i>  Health</a></li>
+                    </ul>
+                   
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade active in">
+                            <h5>
+                                <!-- ngView:  --><div ng-view="" class="ng-scope"><style class="ng-scope">
+
+p {
+ display: block; 
+  
+}
+</style>
+<!-- ngRepeat: v in vm.message | orderBy: +['news_id'] --><div class="jumbotron text-center ng-scope" ng-repeat="v in vm.message | orderBy: +[&#39;news_id&#39;]">
+    <h4 class="ng-binding">
+        Gang jailed over pensioner phone scam</h4>
+    <img class="img-circle" ng-src="http://ichef-1.bbci.co.uk/news/624/cpsprodpb/15CB5/production/_89596298_composite1copy.jpg" src="./HackYourFuture_files/_89596298_composite1copy.jpg">
+    <br>
+    <h6 class="ng-binding">
+        Eight men from London have been jailed for a phone scam that defrauded UK pensioners out of more than £1m...</h6>
+    <button class="btn btn-warning" ng-click="showme=true">view full</button>
+    <div ng-show="showme" class="ng-binding ng-hide">
+        Eight men from London have been jailed for a phone scam that defrauded UK pensioners out of more than £1m.Police say some of the money funded travel from the UK to Syria. <a ng-click="showme=false">less</a>
+    </div>
+</div><!-- end ngRepeat: v in vm.message | orderBy: +['news_id'] --><div class="jumbotron text-center ng-scope" ng-repeat="v in vm.message | orderBy: +[&#39;news_id&#39;]">
+    <h4 class="ng-binding">
+        Leicester City win Premier League: What next for the champions?</h4>
+    <img class="img-circle" ng-src="http://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/94F0/production/_89582183_morgan_goal_getty.jpg" src="./HackYourFuture_files/_89582183_morgan_goal_getty.jpg">
+    <br>
+    <h6 class="ng-binding">
+        The fairytale is complete. The movie has its perfect Hollywood ending. Now, what about that sequel?..</h6>
+    <button class="btn btn-warning" ng-click="showme=true">view full</button>
+    <div ng-show="showme" class="ng-binding ng-hide">
+        The fairytale is complete. The movie has its perfect Hollywood ending. Now, what about that sequel? Will it be Leicester: Back with a Vengeance or The Premier League Strikes Back?  The bookies - still reeling from the eye-watering financial gut-punch of a Leicester title win - are hedging their bets.  The Foxes are 33-1 to be champions again, 5-1 to finish in the top four, 15-8 to finish in the bottom half, and 25-1 to be relegated. When it comes to Leicester's fortunes next season, it seems no scenario can be ruled out.  And then there's the Champions League. Costly continental distraction, or new frontier to be conquered? Here, BBC Sport examines what next season might hold for Leicester. <a ng-click="showme=false">less</a>
+    </div>
+</div><!-- end ngRepeat: v in vm.message | orderBy: +['news_id'] --><div class="jumbotron text-center ng-scope" ng-repeat="v in vm.message | orderBy: +[&#39;news_id&#39;]">
+    <h4 class="ng-binding">
+        15-year-old loses 100 pounds to reach bodybuilding dream</h4>
+    <img class="img-circle" ng-src="http://i2.cdn.turner.com/cnnnext/dam/assets/150924074414-mackenzie-walker-before-after-split-large-169.jpg" src="./HackYourFuture_files/150924074414-mackenzie-walker-before-after-split-large-169.jpg">
+    <br>
+    <h6 class="ng-binding">
+        At 15, MacKenzie Walker has accomplished more than most people twice her age...</h6>
+    <button class="btn btn-warning" ng-click="showme=true">view full</button>
+    <div ng-show="showme" class="ng-binding ng-hide">
+        At 15, MacKenzie Walker has accomplished more than most people twice her age. She's written a book. She's started a business, training and coaching clients online. She's amassed nearly 60,000 Instagram followers.And perhaps most impressive, MacKenzie has lost -- and kept off -- 100 pounds.She never misses the gym, her dad, Scott Walker, said. If I say, 'I want ice cream,' she said, 'Dad, I don't have the (macronutrients) for that.' She won't cheat on her diet.MacKenzie dreams of being Ms. Olympia, the world's best female bodybuilder. Envisioning her in that role is a bit of a stretch for strangers looking at her tiny 5-foot-5-inch frame. But those who know what she's already done to reach her goals have no trouble imagining it. <a ng-click="showme=false">less</a>
+    </div>
+</div><!-- end ngRepeat: v in vm.message | orderBy: +['news_id'] --><div class="jumbotron text-center ng-scope" ng-repeat="v in vm.message | orderBy: +[&#39;news_id&#39;]">
+    <h4 class="ng-binding">
+        Gang jailed over pensioner phone scam</h4>
+    <img class="img-circle" ng-src="http://www.ctvnews.ca/polopoly_fs/1.1289849.1377713731!/httpImage/image.jpg_gen/derivatives/landscape_960/image.jpg" src="./HackYourFuture_files/image.jpg">
+    <br>
+    <h6 class="ng-binding">
+        Eight men from London have been jailed for a phone scam that defrauded UK pensioners out of more than £1m...</h6>
+    <button class="btn btn-warning" ng-click="showme=true">view full</button>
+    <div ng-show="showme" class="ng-binding ng-hide">
+        Eight men from London have been jailed for a phone scam that defrauded UK pensioners out of more than £1m.Police say some of the money funded travel from the UK to Syria. There are fears some of those who travelled had links to so-called Islamic State.Gang leader Makzhumi Abukar was jailed for seven years and four months, alongside accomplices including former X Factor contestant Nathan Fagan-Gayle.Some of the victims - the oldest of whom was 94 - lost as much as £130,000.Passing sentence at the Old Bailey, Judge Anuja Dhir said that none of the convicted men had shown any genuine remorse.She told the men their crimes would have a devastating and lasting impact on the victims, whose average age was 83.Phone scam victim: 'My fears my savings went to. <a ng-click="showme=false">less</a>
+    </div>
+</div><!-- end ngRepeat: v in vm.message | orderBy: +['news_id'] --><div class="jumbotron text-center ng-scope" ng-repeat="v in vm.message | orderBy: +[&#39;news_id&#39;]">
+    <h4 class="ng-binding">
+        Leicester City win Premier League: What next for the champions?</h4>
+    <img class="img-circle" ng-src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/1/10/1420930289602/James-Ward-012.jpg?w=620&amp;q=55&amp;auto=format&amp;usm=12&amp;fit=max&amp;s=3fed5a82220365860e0e6f8ef3e2220e" src="./HackYourFuture_files/James-Ward-012.jpg">
+    <br>
+    <h6 class="ng-binding">
+        The fairytale is complete. The movie has its perfect Hollywood ending. Now, what about that sequel?..</h6>
+    <button class="btn btn-warning" ng-click="showme=true">view full</button>
+    <div ng-show="showme" class="ng-binding ng-hide">
+        The fairytale is complete. The movie has its perfect Hollywood ending. Now, what about that sequel? Will it be Leicester: Back with a Vengeance or The Premier League Strikes Back?  The bookies - still reeling from the eye-watering financial gut-punch of a Leicester title win - are hedging their bets.  The Foxes are 33-1 to be champions again, 5-1 to finish in the top four, 15-8 to finish in the bottom half, and 25-1 to be relegated. When it comes to Leicester's fortunes next season, it seems no scenario can be ruled out.  And then there's the Champions League. Costly continental distraction, or new frontier to be conquered? Here, BBC Sport examines what next season might hold for Leicester. <a ng-click="showme=false">less</a>
+    </div>
+</div><!-- end ngRepeat: v in vm.message | orderBy: +['news_id'] --><div class="jumbotron text-center ng-scope" ng-repeat="v in vm.message | orderBy: +[&#39;news_id&#39;]">
+    <h4 class="ng-binding">
+        15-year-old loses 100 pounds to reach bodybuilding dream</h4>
+    <img class="img-circle" ng-src="http://www.intouchosteo.com/wp-content/uploads/2013/04/Health-News.jpg" src="./HackYourFuture_files/Health-News.jpg">
+    <br>
+    <h6 class="ng-binding">
+        At 15, MacKenzie Walker has accomplished more than most people twice her age...</h6>
+    <button class="btn btn-warning" ng-click="showme=true">view full</button>
+    <div ng-show="showme" class="ng-binding ng-hide">
+        At 15, MacKenzie Walker has accomplished more than most people twice her age. She's written a book. She's started a business, training and coaching clients online. She's amassed nearly 60,000 Instagram followers.And perhaps most impressive, MacKenzie has lost -- and kept off -- 100 pounds.She never misses the gym, her dad, Scott Walker, said. If I say, 'I want ice cream,' she said, 'Dad, I don't have the (macronutrients) for that.' She won't cheat on her diet.MacKenzie dreams of being Ms. Olympia, the world's best female bodybuilder. Envisioning her in that role is a bit of a stretch for strangers looking at her tiny 5-foot-5-inch frame. But those who know what she's already done to reach her goals have no trouble imagining it. <a ng-click="showme=false">less</a>
+    </div>
+</div><!-- end ngRepeat: v in vm.message | orderBy: +['news_id'] --><div class="jumbotron text-center ng-scope" ng-repeat="v in vm.message | orderBy: +[&#39;news_id&#39;]">
+    <h4 class="ng-binding">
+        Gang jailed over pensioner phone scam</h4>
+    <img class="img-circle" ng-src="http://ichef-1.bbci.co.uk/news/660/cpsprodpb/5C0C/production/_85346532_85346529.jpg" src="./HackYourFuture_files/_85346532_85346529.jpg">
+    <br>
+    <h6 class="ng-binding">
+        Eight men from London have been jailed for a phone scam that defrauded UK pensioners out of more than £1m...</h6>
+    <button class="btn btn-warning" ng-click="showme=true">view full</button>
+    <div ng-show="showme" class="ng-binding ng-hide">
+        Eight men from London have been jailed for a phone scam that defrauded UK pensioners out of more than £1m.Police say some of the money funded travel from the UK to Syria. There are fears some of those who travelled had links to so-called Islamic State.Gang leader Makzhumi Abukar was jailed for seven years and four months, alongside accomplices including former X Factor contestant Nathan Fagan-Gayle.Some of the victims - the oldest of whom was 94 - lost as much as £130,000.Passing sentence at the Old Bailey, Judge Anuja Dhir said that none of the convicted men had shown any genuine remorse.She told the men their crimes would have a devastating and lasting impact on the victims, whose average age was 83.Phone scam victim: 'My fears my savings went to Syria'She praised detectives from Scotland Yard's counter terrorism command who brought the men to justice.Speaking about the victims, the judge added: I was struck by their dignity and their courage when giving evidence about a matter that was so obviously painful for them to relive. <a ng-click="showme=false">less</a>
+    </div>
+</div><!-- end ngRepeat: v in vm.message | orderBy: +['news_id'] --><div class="jumbotron text-center ng-scope" ng-repeat="v in vm.message | orderBy: +[&#39;news_id&#39;]">
+    <h4 class="ng-binding">
+        Leicester City win Premier League: What next for the champions?</h4>
+    <img class="img-circle" ng-src="http://home.bt.com/images/jake-humphrey-and-michael-owen-are-part-of-bt-sports-football-coverage-team-136381626065203901-130717131620.jpg" src="./HackYourFuture_files/jake-humphrey-and-michael-owen-are-part-of-bt-sports-football-coverage-team-136381626065203901-130717131620.jpg">
+    <br>
+    <h6 class="ng-binding">
+        The fairytale is complete. The movie has its perfect Hollywood ending. Now, what about that sequel?..</h6>
+    <button class="btn btn-warning" ng-click="showme=true">view full</button>
+    <div ng-show="showme" class="ng-binding ng-hide">
+        The fairytale is complete. The movie has its perfect Hollywood ending. Now, what about that sequel? Will it be Leicester: Back with a Vengeance or The Premier League Strikes Back?  The bookies - still reeling from the eye-watering financial gut-punch of a Leicester title win - are hedging their bets.  The Foxes are 33-1 to be champions again, 5-1 to finish in the top four, 15-8 to finish in the bottom half, and 25-1 to be relegated. When it comes to Leicester's fortunes next season, it seems no scenario can be ruled out.  And then there's the Champions League. Costly continental distraction, or new frontier to be conquered? Here, BBC Sport examines what next season might hold for Leicester. <a ng-click="showme=false">less</a>
+    </div>
+</div><!-- end ngRepeat: v in vm.message | orderBy: +['news_id'] --><div class="jumbotron text-center ng-scope" ng-repeat="v in vm.message | orderBy: +[&#39;news_id&#39;]">
+    <h4 class="ng-binding">
+        15-year-old loses 100 pounds to reach bodybuilding dream</h4>
+    <img class="img-circle" ng-src="http://a57.foxnews.com/images.foxnews.com/content/fox-news/health/2016/05/13/fda-gives-approval-to-using-polio-to-fight-terminal-brain-cancer/_jcr_content/par/featured-media/media-0.img.jpg/723/406/1463107284915.jpg?ve=1&amp;tl=1" src="./HackYourFuture_files/1463107284915.jpg">
+    <br>
+    <h6 class="ng-binding">
+        At 15, MacKenzie Walker has accomplished more than most people twice her age...</h6>
+    <button class="btn btn-warning" ng-click="showme=true">view full</button>
+    <div ng-show="showme" class="ng-binding ng-hide">
+        At 15, MacKenzie Walker has accomplished more than most people twice her age. She's written a book. She's started a business, training and coaching clients online. She's amassed nearly 60,000 Instagram followers.And perhaps most impressive, MacKenzie has lost -- and kept off -- 100 pounds.She never misses the gym, her dad, Scott Walker, said. If I say, 'I want ice cream,' she said, 'Dad, I don't have the (macronutrients) for that.' She won't cheat on her diet.MacKenzie dreams of being Ms. Olympia, the world's best female bodybuilder. Envisioning her in that role is a bit of a stretch for strangers looking at her tiny 5-foot-5-inch frame. But those who know what she's already done to reach her goals have no trouble imagining it. <a ng-click="showme=false">less</a>
+    </div>
+</div><!-- end ngRepeat: v in vm.message | orderBy: +['news_id'] -->
+</div>
+                            </h5>
+                        </div>
+                        <div id="world" class="tab-pane fade">
+                            <h5>
+                                <!-- ngView:  --><div ng-view="" class="ng-scope"><style class="ng-scope">
+
+p {
+ display: block; 
+  
+}
+</style>
+<!-- ngRepeat: v in vm.message | orderBy: +['news_id'] -->
+</div>
+                            </h5>
+                        </div>
+                        <div id="sport" class="tab-pane fade">
+                            <h5>
+                                <!-- ngView:  --><div ng-view="" class="ng-scope"><style class="ng-scope">
+
+p {
+ display: block; 
+  
+}
+</style>
+<!-- ngRepeat: v in vm.message | orderBy: +['news_id'] -->
+</div>
+                            </h5>
+                        </div>
+                        <div id="health" class="tab-pane fade">
+                            <h5>
+                                <!-- ngView:  --><div ng-view="" class="ng-scope"><style class="ng-scope">
+
+p {
+ display: block; 
+  
+}
+</style>
+<!-- ngRepeat: v in vm.message | orderBy: +['news_id'] -->
+</div>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+
+
+</body></html>
