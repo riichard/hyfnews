@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -83,32 +83,15 @@ By Marwa.M7
                         <li><a data-toggle="tab" href="#sport"><i class="fa fa-trophy fa-2x" aria-hidden="true"></i>  {{newCtrl.newscategories[1].cat_name }}</a></li>
                         <li><a data-toggle="tab" href="#health"><i class="fa fa-plus fa-2x"></i>  {{ newCtrl.newscategories[2].cat_name }}</a></li>
                     </ul>
-                   
                     <div class="tab-content">
-                        <div id="home" class="tab-pane fade in active">
+                       <div class="tab-pane fade in active">
                             <h5>
-                                <div ng-view>
-                                </div>
+                                {{vm.news_full}}
+                                
                             </h5>
                         </div>
-                        <div id="world" class="tab-pane fade in active">
-                            <h5>
-                                <div ng-view>
-                                </div>
-                            </h5>
-                        </div>
-                        <div id="sport" class="tab-pane fade in active">
-                            <h5>
-                                <div ng-view>
-                                </div>
-                            </h5>
-                        </div>
-                        <div id="health" class="tab-pane fade in active">
-                            <h5>
-                                <div ng-view>
-                                </div>
-                            </h5>
-                        </div>
+                    
+                      
                     </div>
                 </div>
             </div>
